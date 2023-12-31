@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=League+Spartan:wght@400;500;600;700;900&family=Poppins:ital,wght@0,200;0,300;0,600;0,700;1,400&family=Roboto&display=swap');
+
+/* Base styles (extra small devices - mobile) */
+/* CSS rules */
+:root {
+    --bakgrd: #FFF8F0;
+    --main-header: #000000;
+    --box-bakgrd: #FFFFFF;
+    --box-text: #55206D;
+    --prj-link: #6A87A3;
+    --prj-head: #291854;
+    --header-cover: #190D37;
+    --small-txt: #2858FF;
+    --prj-box1: #19ACFF;
+    --prj-box2: #FFE819;
+    --prj-box3: #FF1919;
+    --cnt-btn: #2F2F2F;
+}
+
+* {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+
+}
+
+
+h1,
+h2,
+h3 {
+    font-family: League Spartan;
+}
+
+
+body {
+    background-color: var(--bakgrd);
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#hero .left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.left .contact-details {
+
+    width: 99%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.phone,
+.email {
+    display: flex;
+}
+
+.info {
+    width: 100%;
+    padding-top: 60px;
+    text-align: center;
+
+}
+
+.contact-details p {
+    font-family: Roboto;
+    font-weight: 600;
+}
+
+
+.info .name {
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--prj-head);
+}
+
+.info .cover {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--header-cover);
+    line-height: 50px;
+    padding-top: 10px;
+}
+
+.info .details {
+    padding-top: 20px;
+    color: #331E6A;
+    font-family: Poppins;
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+
+}
+
+.info button {
+    width: 138px;
+    height: 44px;
+    color: var(--box-bakgrd);
+    background-color: var(--cnt-btn);
+    margin-top: 20px;
+    cursor: pointer;
+    border: 0px;
+}
+
+#hero .right {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right img {
+    border-radius: 50%;
+    height: 250px;
+    width: 200px;
+}
+
+#wid {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.small-text {
+    font-family: Poppins;
+    color: var(--small-txt);
+    font-family: Poppins;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding-bottom: 3px;
+}
+
+.sub-head {
+    line-height: 40px;
+    text-align: center;
+    font-size: 2.0rem;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+
+.skill-desc {
+    color: var(--header-cover);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#wid .boxes {
+    display: flex;
+    gap: 25px;
+    margin-top: 20px;
+    flex-direction: column;
+}
+
+#wid .box {
+    border-radius: 10px;
+    background: #FFF;
+    box-shadow: 6px 2px 25px -9px rgba(0, 0, 0, 0.10);
+    width: 340px;
+    height: 320px;
+}
+
+
+.box .skills {
+    text-align: center;
+    font-family: Poppins;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-top: 20px;
+}
+
+#projects {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/*  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+/* Small devices (tablets) */
+@media screen and (min-width: 576px) {
+    * {
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .info {
+        width: 50%;
+        padding-top: 60px;
+        text-align: center;
+
+    }
+
+    #hero .left {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Medium devices (laptops) */
+@media screen and (min-width: 768px) {
+    #wid .boxes {
+        display: flex;
+        gap: 25px;
+        margin-top: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+/* Large devices (desktops) */
+@media screen and (min-width: 992px) {
+    * {
+        font-size: 18px;
+        margin: 0;
+        padding: 0;
+
+    }
+    #hero {
+        display: flex;
+        flex-direction:row;
+    }
+
+    #hero .right {
+        margin-top:0;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #hero .left {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left .contact-details {
+
+        display: flex;
+        justify-content: space-between;
+        padding-top: 30px;
+        width: 95%;
+    }
+
+    .phone,
+    .email {
+        display: flex;
+    }
+
+    .contact-details p {
+        font-family: Roboto;
+        font-weight: 600;
+    }
+
+    .info {
+        width:90%;
+        padding-top: 60px;
+    }
+    .right img
+    {
+    border-radius: 0px 0px 200px 200px;
+    height: 100%;
+    width: 100%;
+    
+    }
+}
+
+/* Extra large devices (large desktops) */
+@media screen and (min-width: 1200px) {
+    #wid .boxes {
+        display: flex;
+        gap: 25px;
+        margin-top: 20px;
+        flex-direction: row;
+    }
+    .info {
+        width:70%;
+        padding-top: 60px;
+    }
+}
